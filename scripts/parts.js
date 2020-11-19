@@ -27,7 +27,8 @@ parts[0] = voodoo;
 parts[1] = soundblaster;
 
 function printParts(tableId) {
-	for (let i = 0; i < parts.length; i++) {
+	/*for (let i = 0; i < parts.length; i++) {
 		parts[i].print(tableId);
-	}
+	}*/
+	parts.forEach(part => part.print(tableId));
 }
