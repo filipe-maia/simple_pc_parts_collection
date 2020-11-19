@@ -14,7 +14,7 @@ class part {
 		let partsTable = document.getElementById(tableId);
 		for (let i = 0; i < 4; i++) {
 			let newTr = document.createElement('tr');
-			newTr.innerHTML = '<td>$(kind)</td><td>$(maker)</td><td>model</td><td><img src="$(imgUrl)" /></td>';
+			newTr.innerHTML = '<td>' + this.kind + '</td><td>' + this.maker + '</td><td>' + this.model + '</td><td><img src="' + this.imgUrl + '" /></td>';
 			partsTable.appendChild(newTr);
 		}
 	}
