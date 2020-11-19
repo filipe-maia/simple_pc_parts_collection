@@ -11,7 +11,7 @@ class part {
 	}
 	
 	print = (tableId) => {
-		partsTable = document.getElementById(tableId);
+		let partsTable = document.getElementById(tableId);
 		for (let i = 0; i < 4; i++) {
 			let newTr = document.createElement('tr');
 			newTr.innerHTML = '<td>$(kind)</td><td>$(maker)</td><td>model</td><td><img src="$(imgUrl)" /></td>';
